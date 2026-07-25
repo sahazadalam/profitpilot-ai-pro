@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { Activity } from 'lucide-react';
 
@@ -58,3 +58,4 @@ export const BusinessHealth = ({ data }: BusinessHealthProps) => {
     </motion.div>
   );
 };
+

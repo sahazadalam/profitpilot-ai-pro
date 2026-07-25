@@ -1,7 +1,7 @@
 ﻿import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/Badge';
+import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { 
   Database, Brain, TrendingUp, Users, Zap, Shield,
   BarChart3, Clock, CheckCircle, ArrowRight
@@ -86,3 +86,4 @@ export const HowItWorks = () => {
     </motion.div>
   );
 };
+

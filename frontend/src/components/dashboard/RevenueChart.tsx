@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { motion } from 'framer-motion';
 
@@ -52,3 +52,4 @@ export const RevenueChart = ({ data }: RevenueChartProps) => {
     </motion.div>
   );
 };
+

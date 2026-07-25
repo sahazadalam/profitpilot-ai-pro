@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
@@ -25,3 +25,4 @@ export const ChartCard = ({ title, children, className }: ChartCardProps) => {
     </motion.div>
   );
 };
+

@@ -1,6 +1,6 @@
 ﻿import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/Badge';
-import { Card, CardContent } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
 
 export const Testimonials = () => {
   const testimonials = [
@@ -107,3 +107,4 @@ export const Testimonials = () => {
     </motion.div>
   );
 };
+

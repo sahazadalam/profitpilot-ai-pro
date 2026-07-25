@@ -1,5 +1,5 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Plus, Package, ShoppingCart, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -38,3 +38,4 @@ export const QuickActions = () => {
     </Card>
   );
 };
+

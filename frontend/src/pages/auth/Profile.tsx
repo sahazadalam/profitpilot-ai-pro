@@ -1,7 +1,7 @@
 ﻿import { useAuth } from '@/contexts/AuthContext';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { Avatar, AvatarFallback } from '@/components/ui/Avatar';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { User, Mail, Calendar, LogOut } from 'lucide-react';
 
 export const Profile = () => {
@@ -66,3 +66,4 @@ export const Profile = () => {
     </div>
   );
 };
+

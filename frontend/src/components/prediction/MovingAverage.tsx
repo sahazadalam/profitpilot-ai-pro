@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 export const MovingAverage = ({ data }: any) => {
@@ -36,3 +36,4 @@ export const MovingAverage = ({ data }: any) => {
     </Card>
   );
 };
+

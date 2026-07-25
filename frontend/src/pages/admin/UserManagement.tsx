@@ -1,8 +1,8 @@
 ﻿import { motion } from 'framer-motion';
-import { Card, CardContent } from '@/components/ui/Card';
-import { Input } from '@/components/ui/Input';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { Search, UserPlus, Edit, Trash2, Shield, Lock } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 
@@ -54,3 +54,4 @@ export const UserManagement = () => {
     </motion.div>
   );
 };
+

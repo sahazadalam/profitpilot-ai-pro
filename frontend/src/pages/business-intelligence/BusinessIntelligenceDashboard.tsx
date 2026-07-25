@@ -9,11 +9,11 @@ import {
   UserX, Building2, Briefcase, DollarSign, Package, 
   ShoppingCart, LineChart as LineChartIcon
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { Button } from '@/components/ui/Button';
-import { Progress } from '@/components/ui/Progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { api } from '@/services/api';
 import toast from 'react-hot-toast';
 import {
@@ -495,3 +495,4 @@ export const BusinessIntelligenceDashboard = () => {
     </motion.div>
   );
 };
+

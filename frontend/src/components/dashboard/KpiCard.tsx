@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TrendingUp, TrendingDown, DollarSign, Package, ShoppingCart, Wallet } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -50,3 +50,4 @@ export const KpiCard = ({ title, value, icon, trend }: KpiCardProps) => {
     </motion.div>
   );
 };
+

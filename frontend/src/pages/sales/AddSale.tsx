@@ -1,7 +1,7 @@
 ﻿import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/Button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SalesForm } from '@/components/sales/SalesForm';
 import { useSales } from '@/hooks/sales/useSales';
 
@@ -42,3 +42,4 @@ export const AddSale = () => {
     </motion.div>
   );
 };
+

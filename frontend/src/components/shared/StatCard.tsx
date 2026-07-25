@@ -1,4 +1,4 @@
-﻿import { Card, CardContent } from '@/components/ui/Card';
+﻿import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 
@@ -47,3 +47,4 @@ export const StatCard = ({ title, value, icon, trend, color = 'text-primary' }: 
     </motion.div>
   );
 };
+

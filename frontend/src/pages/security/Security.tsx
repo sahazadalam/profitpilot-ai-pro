@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/Badge';
+import { Badge } from '@/components/ui/badge';
 import { Shield, Lock, Server, Database, CheckCircle } from 'lucide-react';
 
 export const Security = () => {
@@ -72,3 +72,4 @@ export const Security = () => {
     </motion.div>
   );
 };
+

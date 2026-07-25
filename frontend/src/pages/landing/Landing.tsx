@@ -22,9 +22,9 @@ import {
   Star,
   Building2
 } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
-import { Badge } from '@/components/ui/Badge';
+import { Badge } from '@/components/ui/badge';
 
 export const Landing = () => {
   const { enterDemoMode } = useAuth();
@@ -472,3 +472,4 @@ export const Landing = () => {
     </div>
   );
 };
+

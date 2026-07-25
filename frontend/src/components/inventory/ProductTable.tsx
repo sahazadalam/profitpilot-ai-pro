@@ -1,7 +1,7 @@
 ﻿import { motion } from 'framer-motion';
 import { Edit, Trash2, Eye } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 interface ProductTableProps {
   products: any[];
@@ -71,3 +71,4 @@ export const ProductTable = ({ products, onEdit }: ProductTableProps) => {
     </div>
   );
 };
+

@@ -8,9 +8,9 @@ import {
   RefreshCw, Brain, ChevronRight, Lightbulb,
   Server, Database, Wifi, UserCheck
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { Button } from '@/components/ui/Button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
 import { api } from '@/services/api';
 import toast from 'react-hot-toast';
@@ -565,4 +565,5 @@ export const Dashboard = () => {
     </motion.div>
   );
 };
+
 

@@ -21,7 +21,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { useAuth } from '@/contexts/AuthContext';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 const navItems = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
@@ -95,4 +95,5 @@ export const Sidebar = () => {
     </motion.aside>
   );
 };
+
 

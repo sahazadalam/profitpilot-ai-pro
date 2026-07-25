@@ -1,4 +1,4 @@
-﻿import { Card, CardContent } from '@/components/ui/Card';
+﻿import { Card, CardContent } from '@/components/ui/card';
 import { Skeleton } from '@/components/common/Skeleton';
 
 export const LoadingSkeleton = () => {
@@ -37,3 +37,4 @@ export const LoadingSkeleton = () => {
     </div>
   );
 };
+

@@ -1,5 +1,5 @@
-﻿import { Button } from '@/components/ui/Button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
+﻿import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export const ProductFilters = () => {
   return (
@@ -19,3 +19,4 @@ export const ProductFilters = () => {
     </div>
   );
 };
+

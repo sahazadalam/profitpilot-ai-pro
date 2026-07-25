@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useRecommendations } from '@/hooks/recommendations/useRecommendations';
 import { RestockRecommendations } from '@/components/recommendations/RestockRecommendations';
 import { PricingRecommendations } from '@/components/recommendations/PricingRecommendations';
@@ -54,3 +54,4 @@ export const RecommendationsDashboard = () => {
     </motion.div>
   );
 };
+

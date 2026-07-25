@@ -1,5 +1,5 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Progress } from '@/components/ui/Progress';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Progress } from '@/components/ui/progress';
 import { motion } from 'framer-motion';
 import { BarChart3 } from 'lucide-react';
 
@@ -36,3 +36,4 @@ export const PerformanceAnalysis = ({ data }: any) => {
     </Card>
   );
 };
+

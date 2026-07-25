@@ -1,9 +1,9 @@
 ﻿import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Printer } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { useSales } from '@/hooks/sales/useSales';
 import { LoadingScreen } from '@/components/common/LoadingScreen';
 
@@ -69,3 +69,4 @@ export const SaleDetails = () => {
     </motion.div>
   );
 };
+

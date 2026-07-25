@@ -1,6 +1,6 @@
 ﻿import { motion } from 'framer-motion';
 import { Bell, Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 export const DashboardHeader = () => {
   return (
@@ -28,3 +28,4 @@ export const DashboardHeader = () => {
     </motion.div>
   );
 };
+

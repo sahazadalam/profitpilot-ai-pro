@@ -7,3 +7,4 @@ export * from './Avatar';
 export * from './Dialog';
 export * from './Select';
 export * from './Progress';
+export * from './Tabs';

@@ -1,5 +1,5 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { motion } from 'framer-motion';
 import { Package, AlertCircle, CheckCircle, Clock } from 'lucide-react';
 
@@ -41,3 +41,4 @@ export const RestockRecommendations = ({ data }: any) => {
     </Card>
   );
 };
+

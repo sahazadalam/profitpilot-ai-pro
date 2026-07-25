@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield } from 'lucide-react';
 
 interface BusinessRiskProps {
@@ -48,3 +48,4 @@ export const BusinessRisk = ({ data }: BusinessRiskProps) => {
     </Card>
   );
 };
+

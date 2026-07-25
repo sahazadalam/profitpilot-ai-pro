@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/Badge';
+import { Badge } from '@/components/ui/badge';
 
 interface SalesTableProps {
   sales: any[];
@@ -45,3 +45,4 @@ export const SalesTable = ({ sales }: SalesTableProps) => {
     </div>
   );
 };
+

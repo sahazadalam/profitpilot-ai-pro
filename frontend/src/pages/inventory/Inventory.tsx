@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ï»¿import React, { useState } from 'react';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { 
@@ -12,12 +12,12 @@ import {
   Eye,
   Filter
 } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
-import { Card, CardContent } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/Dialog';
-import { Label } from '@/components/ui/Label';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
+import { Label } from '@/components/ui/label';
 import { useNavigate } from 'react-router-dom';
 import { api } from '@/services/api';
 import toast from 'react-hot-toast';
@@ -391,9 +391,9 @@ export const Inventory = () => {
 
         {/* Footer */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <span>© 2026 ProfitPilot AI Pro. All rights reserved.</span>
+          <span>Â© 2026 ProfitPilot AI Pro. All rights reserved.</span>
           <span className="flex items-center gap-2 mt-2 sm:mt-0">
-            Built with React 19 · TypeScript · AI-Powered
+            Built with React 19 Â· TypeScript Â· AI-Powered
             <span className="inline-block w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
           </span>
         </div>
@@ -403,3 +403,4 @@ export const Inventory = () => {
 };
 
 export default Inventory;
+
