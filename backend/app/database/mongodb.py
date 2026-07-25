@@ -1,6 +1,5 @@
 """
 MongoDB connection module for ProfitPilot AI Pro.
-Handles asynchronous database connections using Motor.
 """
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 from typing import Optional
@@ -13,7 +12,6 @@ logger = logging.getLogger(__name__)
 class MongoDB:
     """
     MongoDB connection manager.
-    Handles connection lifecycle and provides database access.
     """
     
     def __init__(self):
@@ -25,7 +23,6 @@ class MongoDB:
     async def connect(self) -> None:
         """
         Establish connection to MongoDB.
-        Raises exception if connection fails.
         """
         try:
             logger.info(f"Connecting to MongoDB...")
@@ -66,6 +63,7 @@ class MongoDB:
             self._is_connected = False
             raise
     
+<<<<<<< HEAD
     async def disconnect(self) -> None:
         """
         Close MongoDB connection.
@@ -201,3 +199,6 @@ async def get_database() -> MongoDB:
         MongoDB: MongoDB connection manager instance
     """
     return mongodb
+=======
+    # ... rest of the code remains the same
+>>>>>>> d21959f (Initial frontend)
