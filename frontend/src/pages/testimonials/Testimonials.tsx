@@ -93,7 +93,7 @@ export const Testimonials = () => {
                   </div>
                   <p className="text-sm text-muted-foreground">"{testimonial.content}"</p>
                   <div className="mt-4 flex text-yellow-500">
-                    {'★'.repeat(testimonial.rating)}
+                    {'?'.repeat(testimonial.rating)}
                   </div>
                   <div className="mt-2 text-xs text-muted-foreground">
                     {testimonial.company}
@@ -107,3 +107,4 @@ export const Testimonials = () => {
     </motion.div>
   );
 };
+

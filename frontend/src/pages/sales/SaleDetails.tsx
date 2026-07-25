@@ -69,3 +69,4 @@ export const SaleDetails = () => {
     </motion.div>
   );
 };
+

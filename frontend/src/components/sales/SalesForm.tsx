@@ -42,3 +42,4 @@ export const SalesForm = ({ open, onClose, onSuccess }: SalesFormProps) => {
     </Dialog>
   );
 };
+

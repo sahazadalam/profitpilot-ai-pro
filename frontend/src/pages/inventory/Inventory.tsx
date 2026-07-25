@@ -530,3 +530,4 @@ export const Inventory = () => {
     </div>
   );
 };
+

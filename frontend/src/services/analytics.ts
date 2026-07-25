@@ -50,3 +50,4 @@ export const analyticsService = {
     return response.data.data;
   }
 };
+

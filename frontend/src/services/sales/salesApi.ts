@@ -7,7 +7,7 @@ export const salesApi = {
   },
 
   async getSale(id: string) {
-    const response = await api.get(/sales/);
+    const response = await api.get(`/sales`);
     return response.data;
   },
 
@@ -17,7 +17,8 @@ export const salesApi = {
   },
 
   async deleteSale(id: string) {
-    const response = await api.delete(/sales/);
+    const response = await api.delete(`/sales`);
     return response.data;
   },
 };
+

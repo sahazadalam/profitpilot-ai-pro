@@ -47,3 +47,4 @@ export const RecentSales = ({ sales }: RecentSalesProps) => {
     </motion.div>
   );
 };
+

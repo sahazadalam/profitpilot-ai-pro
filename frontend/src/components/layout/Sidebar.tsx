@@ -95,3 +95,4 @@ export const Sidebar = () => {
     </motion.aside>
   );
 };
+

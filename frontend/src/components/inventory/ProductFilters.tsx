@@ -19,3 +19,4 @@ export const ProductFilters = () => {
     </div>
   );
 };
+

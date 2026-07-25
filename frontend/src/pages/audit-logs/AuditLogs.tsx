@@ -7,7 +7,7 @@ import { useAuth } from '@/contexts/AuthContext';
 
 export const AuditLogs = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'admin' || user?.role === 'Admin' || user?.email === 'sahzadalam114@gmail.com';
+  const isAdmin = user?.role === 'admin' || user?.email === 'sahzadalam114@gmail.com';
 
   const logs = [
     { id: 1, user: 'John Doe', action: 'Login', resource: 'Authentication', timestamp: '2026-07-21 14:30:00', status: 'Success' },
@@ -80,3 +80,4 @@ export const AuditLogs = () => {
     </motion.div>
   );
 };
+

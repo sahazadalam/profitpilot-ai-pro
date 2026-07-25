@@ -45,3 +45,4 @@ export const BusinessHealth = ({ score }: BusinessHealthProps) => {
     </motion.div>
   );
 };
+

@@ -114,3 +114,4 @@ export interface ActionPlan {
   generated_at: string;
   total_actions: number;
 }
+

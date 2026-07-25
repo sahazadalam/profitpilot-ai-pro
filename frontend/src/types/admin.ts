@@ -63,3 +63,4 @@ export interface AdminStats {
   revenue: number;
   active_users: number;
 }
+

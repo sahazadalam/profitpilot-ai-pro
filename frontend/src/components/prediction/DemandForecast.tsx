@@ -67,3 +67,4 @@ export const DemandForecast = () => {
     </Card>
   );
 };
+

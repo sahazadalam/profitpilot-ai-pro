@@ -46,3 +46,4 @@ export const ProfitChart = ({ data }: ProfitChartProps) => {
     </motion.div>
   );
 };
+

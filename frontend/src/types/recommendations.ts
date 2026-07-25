@@ -82,3 +82,4 @@ export interface Optimization {
   priority: 'high' | 'medium' | 'low';
   impact: string;
 }
+

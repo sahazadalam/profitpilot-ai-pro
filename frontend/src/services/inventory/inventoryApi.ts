@@ -7,7 +7,7 @@ export const inventoryApi = {
   },
 
   async getProduct(id: string) {
-    const response = await api.get(/products/);
+    const response = await api.get(`/products`);
     return response.data;
   },
 
@@ -17,12 +17,12 @@ export const inventoryApi = {
   },
 
   async updateProduct(id: string, data: any) {
-    const response = await api.put(/products/, data);
+    const response = await api.put(`/products`,   data);
     return response.data;
   },
 
   async deleteProduct(id: string) {
-    const response = await api.delete(/products/);
+    const response = await api.delete(`/products`);
     return response.data;
   },
 
@@ -31,3 +31,4 @@ export const inventoryApi = {
     return response.data;
   },
 };
+

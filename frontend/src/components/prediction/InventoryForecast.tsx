@@ -34,3 +34,4 @@ export const InventoryForecast = ({ data }: any) => {
     </Card>
   );
 };
+

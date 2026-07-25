@@ -41,3 +41,4 @@ export const useSales = (search?: string) => {
     deleteSale: deleteSale.mutateAsync,
   };
 };
+

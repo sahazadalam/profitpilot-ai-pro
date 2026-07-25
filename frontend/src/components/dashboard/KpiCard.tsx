@@ -50,3 +50,4 @@ export const KpiCard = ({ title, value, icon, trend }: KpiCardProps) => {
     </motion.div>
   );
 };
+

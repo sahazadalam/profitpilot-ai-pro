@@ -8,7 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 
 export const UserManagement = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'admin' || user?.role === 'Admin' || user?.email === 'sahzadalam114@gmail.com';
+  const isAdmin = user?.role === 'admin' || user?.email === 'sahzadalam114@gmail.com';
 
   return (
     <motion.div
@@ -54,3 +54,4 @@ export const UserManagement = () => {
     </motion.div>
   );
 };
+

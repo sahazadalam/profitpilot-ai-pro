@@ -35,3 +35,4 @@ export const SalesCard = ({ title, value, trend }: SalesCardProps) => {
     </motion.div>
   );
 };
+

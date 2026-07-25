@@ -38,3 +38,4 @@ export const Bundles = ({ data }: any) => {
     </Card>
   );
 };
+

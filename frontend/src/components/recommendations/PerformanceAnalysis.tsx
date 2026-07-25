@@ -36,3 +36,4 @@ export const PerformanceAnalysis = ({ data }: any) => {
     </Card>
   );
 };
+

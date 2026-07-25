@@ -44,3 +44,4 @@ export const AdminNav = () => {
     </motion.nav>
   );
 };
+

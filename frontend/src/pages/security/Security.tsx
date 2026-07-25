@@ -72,3 +72,4 @@ export const Security = () => {
     </motion.div>
   );
 };
+

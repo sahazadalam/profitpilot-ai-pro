@@ -36,3 +36,4 @@ export const MovingAverage = ({ data }: any) => {
     </Card>
   );
 };
+

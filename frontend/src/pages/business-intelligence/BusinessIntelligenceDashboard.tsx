@@ -495,3 +495,4 @@ export const BusinessIntelligenceDashboard = () => {
     </motion.div>
   );
 };
+

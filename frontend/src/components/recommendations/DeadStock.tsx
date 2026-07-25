@@ -36,3 +36,4 @@ export const DeadStock = ({ data }: any) => {
     </Card>
   );
 };
+

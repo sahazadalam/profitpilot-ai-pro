@@ -52,3 +52,4 @@ export const RevenueChart = ({ data }: RevenueChartProps) => {
     </motion.div>
   );
 };
+

@@ -54,3 +54,4 @@ export const RevenueAnalytics = ({ data }: RevenueAnalyticsProps) => {
     </ChartCard>
   );
 };
+

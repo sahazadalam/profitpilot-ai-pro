@@ -48,3 +48,4 @@ export const BusinessRisk = ({ data }: BusinessRiskProps) => {
     </Card>
   );
 };
+

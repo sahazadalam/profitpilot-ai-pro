@@ -114,3 +114,4 @@ export const Features = () => {
     </motion.div>
   );
 };
+

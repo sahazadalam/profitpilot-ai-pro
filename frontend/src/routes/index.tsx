@@ -52,7 +52,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
 const AdminRoute = ({ children }: { children: React.ReactNode }) => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'admin' || user?.role === 'Admin' || user?.email === 'sahzadalam114@gmail.com';
+  const isAdmin = user?.role === 'admin' || user?.email === 'sahzadalam114@gmail.com';
   
   if (!isAdmin) {
     return <Navigate to="/dashboard" replace />;
@@ -112,3 +112,4 @@ export const AppRoutes = () => {
     </Routes>
   );
 };
+

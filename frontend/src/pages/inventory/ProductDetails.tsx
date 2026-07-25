@@ -8,7 +8,6 @@ import { useInventory } from '@/hooks/inventory/useInventory';
 import { LoadingScreen } from '@/components/common/LoadingScreen';
 import { useState } from 'react';
 
-// Interface for product data
 interface Product {
   id: string;
   name: string;
@@ -38,10 +37,7 @@ export const ProductDetails = () => {
           <Package className="h-16 w-16 text-gray-400 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-gray-600">Product not found</h2>
           <p className="text-gray-500 mt-2">The product you're looking for doesn't exist.</p>
-          <Button 
-            className="mt-4" 
-            onClick={() => navigate('/inventory')}
-          >
+          <Button className="mt-4" onClick={() => navigate('/inventory')}>
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Inventory
           </Button>
@@ -50,7 +46,6 @@ export const ProductDetails = () => {
     );
   }
 
-  // Handle delete with confirmation
   const handleDelete = async () => {
     if (window.confirm(`Are you sure you want to delete "${product.name}"? This action cannot be undone.`)) {
       setIsDeleting(true);
@@ -65,7 +60,6 @@ export const ProductDetails = () => {
     }
   };
 
-  // Format date
   const formatDate = (date?: string) => {
     if (!date) return 'N/A';
     return new Date(date).toLocaleDateString('en-US', {
@@ -77,23 +71,16 @@ export const ProductDetails = () => {
     });
   };
 
-  // Get status badge variant
   const getStatusVariant = (status?: string) => {
     switch (status) {
-      case 'in-stock':
-        return 'default';
-      case 'low-stock':
-        return 'warning';
-      case 'out-of-stock':
-        return 'destructive';
-      case 'discontinued':
-        return 'outline';
-      default:
-        return 'secondary';
+      case 'in-stock': return 'default';
+      case 'low-stock': return 'warning';
+      case 'out-of-stock': return 'destructive';
+      case 'discontinued': return 'outline';
+      default: return 'secondary';
     }
   };
 
-  // Get stock status label
   const getStockStatus = (stock: number) => {
     if (stock <= 0) return 'Out of Stock';
     if (stock < 10) return 'Low Stock';
@@ -101,7 +88,6 @@ export const ProductDetails = () => {
     return 'In Stock';
   };
 
-  // Get stock status color
   const getStockColor = (stock: number) => {
     if (stock <= 0) return 'text-red-600 bg-red-50 border-red-200';
     if (stock < 10) return 'text-yellow-600 bg-yellow-50 border-yellow-200';
@@ -116,13 +102,8 @@ export const ProductDetails = () => {
       transition={{ duration: 0.5 }}
       className="max-w-4xl mx-auto space-y-6 p-4 md:p-6"
     >
-      {/* Header with Navigation */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate('/inventory')}
-          className="w-fit"
-        >
+        <Button variant="ghost" onClick={() => navigate('/inventory')} className="w-fit">
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back to Inventory
         </Button>
@@ -147,7 +128,6 @@ export const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Product Details Card */}
       <Card className="overflow-hidden">
         <CardHeader className="border-b">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -167,7 +147,6 @@ export const ProductDetails = () => {
         </CardHeader>
 
         <CardContent className="p-6 space-y-6">
-          {/* Main Info Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="space-y-1">
               <p className="text-sm text-muted-foreground">Category</p>
@@ -196,7 +175,6 @@ export const ProductDetails = () => {
             </div>
           </div>
 
-          {/* Additional Info */}
           <div className="grid md:grid-cols-2 gap-4 pt-4 border-t">
             {product.supplier && (
               <div className="space-y-1">
@@ -226,7 +204,6 @@ export const ProductDetails = () => {
             )}
           </div>
 
-          {/* Description */}
           {product.description && (
             <div className="pt-4 border-t">
               <p className="text-sm text-muted-foreground mb-2">Description</p>
@@ -234,7 +211,6 @@ export const ProductDetails = () => {
             </div>
           )}
 
-          {/* Quick Actions */}
           <div className="flex flex-wrap gap-3 pt-4 border-t">
             <Button 
               variant="outline" 
@@ -264,7 +240,6 @@ export const ProductDetails = () => {
         </CardContent>
       </Card>
 
-      {/* Related Products or Additional Info */}
       <Card>
         <CardHeader>
           <CardTitle className="text-sm font-medium">Product Details</CardTitle>
@@ -287,3 +262,4 @@ export const ProductDetails = () => {
 };
 
 export default ProductDetails;
+

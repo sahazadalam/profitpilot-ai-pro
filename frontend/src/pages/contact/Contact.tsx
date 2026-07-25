@@ -85,3 +85,4 @@ export const Contact = () => {
     </motion.div>
   );
 };
+

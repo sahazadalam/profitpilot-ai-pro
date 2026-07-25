@@ -42,3 +42,4 @@ export const PredictionFilters = ({ filters, setFilters }: any) => {
     </Card>
   );
 };
+

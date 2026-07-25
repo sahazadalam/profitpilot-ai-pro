@@ -100,3 +100,4 @@ export const FAQ = () => {
     </motion.div>
   );
 };
+

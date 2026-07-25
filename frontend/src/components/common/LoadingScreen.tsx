@@ -16,3 +16,4 @@ export const LoadingScreen = () => {
     </div>
   );
 };
+
