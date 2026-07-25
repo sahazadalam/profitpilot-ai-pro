@@ -1,6 +1,6 @@
 ﻿import { motion } from 'framer-motion';
 import { Bell, Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 
 export const DashboardHeader = () => {
   return (

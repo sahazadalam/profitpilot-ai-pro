@@ -1,4 +1,4 @@
-﻿import { Card, CardContent } from '@/components/ui/card';
+﻿import { Card, CardContent } from '@/components/ui/Card';
 import { Skeleton } from '@/components/common/Skeleton';
 
 export const LoadingSkeleton = () => {

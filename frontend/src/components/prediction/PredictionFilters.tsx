@@ -1,8 +1,8 @@
-﻿import { Card, CardContent } from '@/components/ui/card';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+﻿import { Card, CardContent } from '@/components/ui/Card';
+import { Label } from '@/components/ui/Label';
+import { Input } from '@/components/ui/Input';
+import { Button } from '@/components/ui/Button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
 
 export const PredictionFilters = ({ filters, setFilters }: any) => {
   return (

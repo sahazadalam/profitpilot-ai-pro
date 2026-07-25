@@ -1,7 +1,7 @@
 ﻿import { motion } from 'framer-motion';
 import { Edit, Trash2, Eye } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/Button';
+import { Badge } from '@/components/ui/Badge';
 
 interface ProductTableProps {
   products: any[];

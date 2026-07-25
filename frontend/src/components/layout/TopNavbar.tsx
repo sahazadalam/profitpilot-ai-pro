@@ -1,10 +1,10 @@
 ﻿import { Search, Bell, Moon, Sun, User, Sparkles } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/components/ui/Input';
 import { motion } from 'framer-motion';
 import { useAuth } from '@/contexts/AuthContext';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback } from '@/components/ui/Avatar';
+import { Badge } from '@/components/ui/Badge';
 import { Link } from 'react-router-dom';
 
 export const TopNavbar = () => {

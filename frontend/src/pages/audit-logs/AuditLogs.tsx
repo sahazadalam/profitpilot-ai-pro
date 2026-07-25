@@ -1,7 +1,7 @@
 ﻿import { motion } from 'framer-motion';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/Card';
+import { Input } from '@/components/ui/Input';
+import { Button } from '@/components/ui/Button';
 import { Search, Download, Lock } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 

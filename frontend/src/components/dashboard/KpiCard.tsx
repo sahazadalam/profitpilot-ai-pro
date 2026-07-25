@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { TrendingUp, TrendingDown, DollarSign, Package, ShoppingCart, Wallet } from 'lucide-react';
 import { motion } from 'framer-motion';
 

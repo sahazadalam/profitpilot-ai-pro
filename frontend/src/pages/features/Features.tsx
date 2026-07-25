@@ -5,9 +5,9 @@ import {
   Code, Layers, Target, Briefcase, GraduationCap, Building2,
   LineChart, Settings, UserCircle, Bell, Calendar, FileText
 } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/components/ui/Badge';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 
 export const Features = () => {
   const features = [

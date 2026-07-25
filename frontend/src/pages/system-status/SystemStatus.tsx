@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Server, Database, Globe, Activity, CheckCircle, Lock } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 

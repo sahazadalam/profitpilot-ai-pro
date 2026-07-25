@@ -1,7 +1,7 @@
 ﻿import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/components/ui/Badge';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { 
   Database, Brain, TrendingUp, Users, Zap, Shield,
   BarChart3, Clock, CheckCircle, ArrowRight

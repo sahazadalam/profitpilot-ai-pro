@@ -4,10 +4,10 @@ import {
   Send, Loader2, Bot, User, Copy, Check, Trash2, 
   RefreshCw, Sparkles, History, Lightbulb
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Badge } from '@/components/ui/Badge';
+import { Avatar, AvatarFallback } from '@/components/ui/Avatar';
 import { api } from '@/services/api';
 import toast from 'react-hot-toast';
 import { useAuth } from '@/contexts/AuthContext';
