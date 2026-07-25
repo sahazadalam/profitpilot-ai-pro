@@ -61,4 +61,3 @@ export const CategoryAnalytics = ({ data }: CategoryAnalyticsProps) => {
     </ChartCard>
   );
 };
-

@@ -41,4 +41,3 @@ export const SalesChart = ({ data, title }: SalesChartProps) => {
     </motion.div>
   );
 };
-

@@ -1,11 +1,11 @@
-﻿import React from 'react';
+import React from 'react';
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
 export const Card = ({ children, className = '', ...props }: CardProps) => (
-  <div className={`rounded-lg border bg-white shadow-sm ${className}`} {...props}>
+  <div className={`rounded-lg border border-gray-200 bg-white shadow-sm ${className}`} {...props}>
     {children}
   </div>
 );
@@ -17,7 +17,7 @@ export const CardHeader = ({ children, className = '', ...props }: CardProps) =>
 );
 
 export const CardTitle = ({ children, className = '', ...props }: CardProps) => (
-  <h3 className={`text-2xl font-semibold leading-none tracking-tight ${className}`} {...props}>
+  <h3 className={`text-2xl font-semibold leading-none tracking-tight text-gray-900 ${className}`} {...props}>
     {children}
   </h3>
 );
@@ -40,3 +40,4 @@ export const CardFooter = ({ children, className = '', ...props }: CardProps) =>
   </div>
 );
 
+export default Card;

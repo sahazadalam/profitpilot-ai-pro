@@ -75,4 +75,3 @@ export const TrendAnalysis = ({ data }: TrendAnalysisProps) => {
     </ChartCard>
   );
 };
-

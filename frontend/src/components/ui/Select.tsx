@@ -45,3 +45,4 @@ export const SelectItem = ({ value, children, className = '', ...props }: any) =
   );
 };
 
+export default Select;

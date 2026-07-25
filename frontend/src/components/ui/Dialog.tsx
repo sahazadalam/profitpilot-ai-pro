@@ -1,4 +1,4 @@
-﻿import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from 'react';
 
 interface DialogContextType {
   open: boolean;
@@ -59,3 +59,5 @@ export const DialogFooter = ({ children, className = '', ...props }: any) => (
     {children}
   </div>
 );
+
+export default Dialog;

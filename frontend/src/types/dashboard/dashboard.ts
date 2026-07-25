@@ -37,4 +37,3 @@ export interface ChartData {
   revenue: number;
   profit: number;
 }
-

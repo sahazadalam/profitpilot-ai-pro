@@ -52,4 +52,3 @@ export const TopProducts = ({ products }: TopProductsProps) => {
     </motion.div>
   );
 };
-

@@ -55,4 +55,3 @@ export const recommendationsService = {
     return response.data.data;
   }
 };
-

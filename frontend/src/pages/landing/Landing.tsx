@@ -92,7 +92,7 @@ export const Landing = () => {
     { value: '98%', label: 'Customer Satisfaction', icon: Users },
     { value: '50K+', label: 'Businesses Using', icon: Building2 },
     { value: '+', label: 'Revenue Tracked', icon: DollarSign },
-    { value: '4.9?', label: 'Average Rating', icon: Star },
+    { value: '4.9★', label: 'Average Rating', icon: Star },
   ];
 
   return (
@@ -459,9 +459,9 @@ export const Landing = () => {
               Developed by <span className="font-medium text-primary">Sahzad Alam Ansiri</span>
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-              ?? <a href="mailto:sahazadalam14@gmail.com" className="hover:text-primary transition-colors">sahazadalam14@gmail.com</a>
+              📧 <a href="mailto:sahazadalam14@gmail.com" className="hover:text-primary transition-colors">sahazadalam14@gmail.com</a>
               {' '}|{' '}
-              ?? <a href="tel:+919740782053" className="hover:text-primary transition-colors">+91 9740782053</a>
+              📞 <a href="tel:+919740782053" className="hover:text-primary transition-colors">+91 9740782053</a>
             </p>
             <p className="mt-2 text-xs text-muted-foreground">
               © 2026 ProfitPilot AI Pro. All rights reserved.
@@ -472,4 +472,3 @@ export const Landing = () => {
     </div>
   );
 };
-

@@ -40,4 +40,3 @@ export const Privacy = () => {
     </motion.div>
   );
 };
-

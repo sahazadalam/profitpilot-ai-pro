@@ -1,7 +1,7 @@
-﻿import React from 'react';
+import React from 'react';
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'warning' | 'success' | 'info' | 'icon';
+  variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'warning' | 'success' | 'info';
   children?: React.ReactNode;
 }
 
@@ -13,8 +13,7 @@ export const Badge = ({ children, variant = 'default', className = '', ...props 
     outline: 'border border-gray-300 text-gray-700',
     warning: 'bg-yellow-100 text-yellow-800',
     success: 'bg-green-100 text-green-800',
-    info: 'bg-cyan-100 text-cyan-800',
-    icon: 'bg-gray-100 text-gray-600'
+    info: 'bg-cyan-100 text-cyan-800'
   };
   
   return (
@@ -24,3 +23,4 @@ export const Badge = ({ children, variant = 'default', className = '', ...props 
   );
 };
 
+export default Badge;

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
   children?: React.ReactNode;
@@ -10,3 +10,4 @@ export const Label = ({ children, className = '', ...props }: LabelProps) => (
   </label>
 );
 
+export default Label;

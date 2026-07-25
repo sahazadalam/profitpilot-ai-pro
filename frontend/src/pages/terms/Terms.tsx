@@ -52,4 +52,3 @@ export const Terms = () => {
     </motion.div>
   );
 };
-

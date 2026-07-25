@@ -25,4 +25,3 @@ export const ChartCard = ({ title, children, className }: ChartCardProps) => {
     </motion.div>
   );
 };
-

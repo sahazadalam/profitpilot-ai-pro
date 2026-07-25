@@ -145,4 +145,3 @@ export interface ScenarioComparison {
   };
   confidence_score: number;
 }
-

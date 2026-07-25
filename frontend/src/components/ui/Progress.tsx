@@ -13,3 +13,4 @@ export const Progress = ({ value = 0, className = '', ...props }: ProgressProps)
   </div>
 );
 
+export default Progress;

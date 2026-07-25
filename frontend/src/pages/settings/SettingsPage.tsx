@@ -1,48 +1,21 @@
-﻿import { motion } from 'framer-motion';
+﻿import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { User, Bell, Lock, Palette, Shield, Save, LogOut } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
-import { Switch } from '@/components/ui/switch';
-import { 
-  Settings, User, Bell, Lock, Palette, Globe, 
-  Database, Shield, Save, RefreshCw, LogOut,
-  Mail, Phone, MapPin, Briefcase, Users,
-  CreditCard, Clock, Moon, Sun, Monitor
-} from 'lucide-react';
-import { useAuth } from '@/contexts/AuthContext';
-import { useTheme } from '@/contexts/ThemeContext';
-import { useState } from 'react';
-import toast from 'react-hot-toast';
 
 export const SettingsPage = () => {
-  const { user, logout } = useAuth();
-  const { theme, toggleTheme } = useTheme();
-  const [isLoading, setIsLoading] = useState(false);
-
-  const [profile, setProfile] = useState({
-    full_name: user?.full_name || '',
-    email: user?.email || '',
-    phone: '+1 234 567 8900',
-    company: 'ProfitPilot AI Pro',
-    role: user?.role || 'Admin',
-  });
-
-  const [notifications, setNotifications] = useState({
-    email: true,
-    push: true,
-    desktop: true,
-    sales: true,
-    inventory: true,
-    system: true,
-  });
+  const [activeTab, setActiveTab] = useState('profile');
+  const [loading, setLoading] = useState(false);
 
   const handleSave = () => {
-    setIsLoading(true);
+    setLoading(true);
     setTimeout(() => {
-      toast.success('Settings saved successfully!');
-      setIsLoading(false);
-    }, 1500);
+      setLoading(false);
+      alert('Settings saved successfully!');
+    }, 1000);
   };
 
   return (
@@ -50,166 +23,167 @@ export const SettingsPage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="space-y-6 p-6"
+      className="space-y-6 p-6 min-h-screen"
+      style={{ backgroundColor: '#0b1324' }}
     >
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
-          <p className="text-muted-foreground">Manage your account and application settings</p>
-        </div>
-        <Button onClick={handleSave} className="gap-2" disabled={isLoading}>
-          <Save className="h-4 w-4" />
-          {isLoading ? 'Saving...' : 'Save Changes'}
-        </Button>
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight text-white">Settings</h1>
+        <p className="text-gray-400">Manage your application settings</p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        {/* Profile Settings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <User className="h-5 w-5" />
-              Profile
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="space-y-2">
-              <Label>Full Name</Label>
-              <Input 
-                value={profile.full_name}
-                onChange={(e) => setProfile({ ...profile, full_name: e.target.value })}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label>Email</Label>
-              <Input 
-                value={profile.email}
-                onChange={(e) => setProfile({ ...profile, email: e.target.value })}
-                type="email"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label>Phone</Label>
-              <Input 
-                value={profile.phone}
-                onChange={(e) => setProfile({ ...profile, phone: e.target.value })}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label>Role</Label>
-              <Input value={profile.role} disabled className="bg-muted" />
-            </div>
-          </CardContent>
-        </Card>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Sidebar */}
+        <div className="md:col-span-1">
+          <Card className="bg-[#111c2f] border-[#1e2a44]">
+            <CardContent className="p-4 space-y-2">
+              <button
+                onClick={() => setActiveTab('profile')}
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-400 hover:bg-[#1e2a44] hover:text-white"
+              >
+                <User className="h-4 w-4" />
+                Profile
+              </button>
+              <button
+                onClick={() => setActiveTab('security')}
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-400 hover:bg-[#1e2a44] hover:text-white"
+              >
+                <Lock className="h-4 w-4" />
+                Security
+              </button>
+              <button
+                onClick={() => setActiveTab('appearance')}
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-400 hover:bg-[#1e2a44] hover:text-white"
+              >
+                <Palette className="h-4 w-4" />
+                Appearance
+              </button>
+              <button
+                onClick={() => setActiveTab('notifications')}
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-400 hover:bg-[#1e2a44] hover:text-white"
+              >
+                <Bell className="h-4 w-4" />
+                Notifications
+              </button>
+              <button
+                onClick={() => setActiveTab('system')}
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-400 hover:bg-[#1e2a44] hover:text-white"
+              >
+                <Shield className="h-4 w-4" />
+                System
+              </button>
+              <div className="pt-4 border-t border-[#1e2a44]">
+                <button className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-red-400 hover:bg-red-900/20 hover:text-red-300 transition-colors">
+                  <LogOut className="h-4 w-4" />
+                  Logout
+                </button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
 
-        {/* Appearance Settings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Palette className="h-5 w-5" />
-              Appearance
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex items-center justify-between rounded-lg border p-3">
-              <div className="flex items-center gap-3">
-                <Sun className="h-5 w-5" />
-                <div>
-                  <p className="font-medium">Light Mode</p>
-                  <p className="text-sm text-muted-foreground">Use light theme</p>
+        {/* Content */}
+        <div className="md:col-span-3">
+          <Card className="bg-[#111c2f] border-[#1e2a44]">
+            <CardHeader>
+              <CardTitle className="text-white">
+                {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Settings
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {activeTab === 'profile' && (
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">Full Name</Label>
+                    <Input defaultValue="John Doe" className="bg-[#0b1324] border-[#1e2a44] text-white" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">Email</Label>
+                    <Input defaultValue="john@profitpilot.com" className="bg-[#0b1324] border-[#1e2a44] text-white" />
+                  </div>
+                  <Button onClick={handleSave} disabled={loading} className="bg-blue-600 hover:bg-blue-700 text-white">
+                    {loading ? 'Saving...' : 'Save Changes'}
+                  </Button>
                 </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <Switch 
-                  checked={theme === 'dark'}
-                  onCheckedChange={toggleTheme}
-                />
-              </div>
-            </div>
-            <div className="flex items-center justify-between rounded-lg border p-3">
-              <div className="flex items-center gap-3">
-                <Monitor className="h-5 w-5" />
-                <div>
-                  <p className="font-medium">System Theme</p>
-                  <p className="text-sm text-muted-foreground">Follow system preference</p>
+              )}
+              {activeTab === 'security' && (
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">Current Password</Label>
+                    <Input type="password" placeholder="Enter current password" className="bg-[#0b1324] border-[#1e2a44] text-white" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">New Password</Label>
+                    <Input type="password" placeholder="Enter new password" className="bg-[#0b1324] border-[#1e2a44] text-white" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">Confirm Password</Label>
+                    <Input type="password" placeholder="Confirm new password" className="bg-[#0b1324] border-[#1e2a44] text-white" />
+                  </div>
+                  <Button onClick={handleSave} disabled={loading} className="bg-blue-600 hover:bg-blue-700 text-white">
+                    {loading ? 'Updating...' : 'Update Password'}
+                  </Button>
                 </div>
-              </div>
-              <Switch />
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Notification Settings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Bell className="h-5 w-5" />
-              Notifications
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex items-center justify-between rounded-lg border p-3">
-              <div>
-                <p className="font-medium">Email Notifications</p>
-                <p className="text-sm text-muted-foreground">Receive updates via email</p>
-              </div>
-              <Switch 
-                checked={notifications.email}
-                onCheckedChange={(checked) => setNotifications({ ...notifications, email: checked })}
-              />
-            </div>
-            <div className="flex items-center justify-between rounded-lg border p-3">
-              <div>
-                <p className="font-medium">Push Notifications</p>
-                <p className="text-sm text-muted-foreground">Receive push notifications</p>
-              </div>
-              <Switch 
-                checked={notifications.push}
-                onCheckedChange={(checked) => setNotifications({ ...notifications, push: checked })}
-              />
-            </div>
-            <div className="flex items-center justify-between rounded-lg border p-3">
-              <div>
-                <p className="font-medium">Desktop Notifications</p>
-                <p className="text-sm text-muted-foreground">Receive desktop alerts</p>
-              </div>
-              <Switch 
-                checked={notifications.desktop}
-                onCheckedChange={(checked) => setNotifications({ ...notifications, desktop: checked })}
-              />
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Security Settings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5" />
-              Security
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <Lock className="h-4 w-4" />
-              Change Password
-            </Button>
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <Shield className="h-4 w-4" />
-              Two-Factor Authentication
-            </Button>
-            <Button 
-              variant="destructive" 
-              className="w-full justify-start gap-2"
-              onClick={logout}
-            >
-              <LogOut className="h-4 w-4" />
-              Logout All Devices
-            </Button>
-          </CardContent>
-        </Card>
+              )}
+              {activeTab === 'appearance' && (
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label className="text-gray-300">Theme</Label>
+                    <select className="w-full px-4 py-2 rounded-lg bg-[#0b1324] border-[#1e2a44] text-white">
+                      <option value="dark">Dark</option>
+                      <option value="light">Light</option>
+                      <option value="system">System</option>
+                    </select>
+                  </div>
+                  <Button onClick={handleSave} disabled={loading} className="bg-blue-600 hover:bg-blue-700 text-white">
+                    {loading ? 'Saving...' : 'Save Theme'}
+                  </Button>
+                </div>
+              )}
+              {activeTab === 'notifications' && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between py-2 border-b border-[#1e2a44]">
+                    <span className="text-gray-300">Email Notifications</span>
+                    <input type="checkbox" defaultChecked className="w-5 h-5 accent-blue-600" />
+                  </div>
+                  <div className="flex items-center justify-between py-2 border-b border-[#1e2a44]">
+                    <span className="text-gray-300">Push Notifications</span>
+                    <input type="checkbox" className="w-5 h-5 accent-blue-600" />
+                  </div>
+                  <div className="flex items-center justify-between py-2">
+                    <span className="text-gray-300">Sales Alerts</span>
+                    <input type="checkbox" defaultChecked className="w-5 h-5 accent-blue-600" />
+                  </div>
+                  <Button onClick={handleSave} disabled={loading} className="bg-blue-600 hover:bg-blue-700 text-white">
+                    {loading ? 'Saving...' : 'Save Preferences'}
+                  </Button>
+                </div>
+              )}
+              {activeTab === 'system' && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between py-2 border-b border-[#1e2a44]">
+                    <span className="text-gray-300">Version</span>
+                    <span className="text-white">v1.0.0</span>
+                  </div>
+                  <div className="flex items-center justify-between py-2 border-b border-[#1e2a44]">
+                    <span className="text-gray-300">Database Status</span>
+                    <span className="text-green-400">Connected</span>
+                  </div>
+                  <div className="flex items-center justify-between py-2">
+                    <span className="text-gray-300">API Status</span>
+                    <span className="text-green-400">Online</span>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <Save className="h-4 w-4 mr-2" />
+                    Save System Settings
+                  </Button>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </motion.div>
   );
 };
 
+export default SettingsPage;

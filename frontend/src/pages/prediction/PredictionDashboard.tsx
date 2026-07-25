@@ -544,4 +544,3 @@ export const PredictionDashboard = () => {
     </motion.div>
   );
 };
-

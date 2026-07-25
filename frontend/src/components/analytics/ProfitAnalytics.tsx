@@ -42,4 +42,3 @@ export const ProfitAnalytics = ({ data }: ProfitAnalyticsProps) => {
     </ChartCard>
   );
 };
-

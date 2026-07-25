@@ -60,4 +60,3 @@ export const useIntelligence = () => {
     error: customerSegments.error || anomalies.error || riskPrediction.error,
   };
 };
-

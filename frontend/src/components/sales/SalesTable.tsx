@@ -45,4 +45,3 @@ export const SalesTable = ({ sales }: SalesTableProps) => {
     </div>
   );
 };
-

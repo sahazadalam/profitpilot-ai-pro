@@ -58,4 +58,3 @@ export const BusinessHealth = ({ data }: BusinessHealthProps) => {
     </motion.div>
   );
 };
-

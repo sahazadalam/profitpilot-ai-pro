@@ -46,4 +46,3 @@ export const EditProduct = () => {
     </motion.div>
   );
 };
-

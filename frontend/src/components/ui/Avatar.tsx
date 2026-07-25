@@ -20,3 +20,4 @@ export const AvatarFallback = ({ children, className = '', ...props }: any) => (
   </div>
 );
 
+export default Avatar;

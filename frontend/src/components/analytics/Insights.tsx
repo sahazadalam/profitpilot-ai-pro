@@ -64,4 +64,3 @@ export const Insights = ({ data }: InsightsProps) => {
     </Card>
   );
 };
-

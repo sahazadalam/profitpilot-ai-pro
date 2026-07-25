@@ -61,4 +61,3 @@ export const predictionService = {
     return response.data.data;
   }
 };
-

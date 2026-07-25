@@ -42,4 +42,3 @@ export interface OrganizationSettings {
   branches: string[];
   categories: string[];
 }
-

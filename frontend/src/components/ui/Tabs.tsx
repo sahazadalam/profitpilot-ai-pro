@@ -71,3 +71,4 @@ export const TabsContent = ({ value, children, className = '' }: { value: string
   return <div className={`mt-2 focus-visible:outline-none ${className}`}>{children}</div>;
 };
 
+export default Tabs;

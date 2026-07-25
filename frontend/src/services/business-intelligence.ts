@@ -55,4 +55,3 @@ export const intelligenceService = {
     return response.data.data;
   }
 };
-

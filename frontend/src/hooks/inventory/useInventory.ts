@@ -54,4 +54,3 @@ export const useInventory = (search?: string) => {
     deleteProduct: deleteProduct.mutateAsync,
   };
 };
-

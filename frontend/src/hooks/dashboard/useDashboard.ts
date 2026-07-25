@@ -8,4 +8,3 @@ export const useDashboard = () => {
     staleTime: 5 * 60 * 1000,
   });
 };
-

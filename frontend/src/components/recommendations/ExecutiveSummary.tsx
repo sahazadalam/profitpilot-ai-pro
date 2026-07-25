@@ -37,4 +37,3 @@ export const ExecutiveSummary = ({ data }: any) => {
     </Card>
   );
 };
-

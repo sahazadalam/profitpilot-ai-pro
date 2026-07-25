@@ -36,4 +36,3 @@ export const LossProducts = ({ data }: any) => {
     </Card>
   );
 };
-

@@ -86,4 +86,3 @@ export const HowItWorks = () => {
     </motion.div>
   );
 };
-

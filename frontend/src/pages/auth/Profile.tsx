@@ -66,4 +66,3 @@ export const Profile = () => {
     </div>
   );
 };
-

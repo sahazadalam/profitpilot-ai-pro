@@ -30,7 +30,7 @@ export const PricingRecommendations = ({ data }: any) => {
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-sm font-medium">
-                   ? 
+                   → 
                 </span>
                 <Badge variant={item.action === 'increase' ? 'default' : 'secondary'}>
                   {item.action}
@@ -43,4 +43,3 @@ export const PricingRecommendations = ({ data }: any) => {
     </Card>
   );
 };
-

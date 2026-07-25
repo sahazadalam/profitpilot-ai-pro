@@ -47,4 +47,3 @@ export const ModelComparison = ({ models }: ModelComparisonProps) => {
     </Card>
   );
 };
-

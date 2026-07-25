@@ -5,12 +5,12 @@ import toast from 'react-hot-toast';
 export const authService = {
   async login(credentials: LoginCredentials): Promise<AuthResponse> {
     try {
-      console.log('?? Attempting login:', credentials.email);
+      console.log('🔐 Attempting login:', credentials.email);
       const response = await api.post('/auth/login', credentials);
-      console.log('? Login successful:', response.data);
+      console.log('✅ Login successful:', response.data);
       return response.data;
     } catch (error: any) {
-      console.error('? Login error:', error);
+      console.error('❌ Login error:', error);
       
       // Extract error message from response
       const errorMessage = error.response?.data?.error?.message || 
@@ -25,12 +25,12 @@ export const authService = {
 
   async register(data: RegisterCredentials): Promise<AuthResponse> {
     try {
-      console.log('?? Attempting registration:', data.email);
+      console.log('📝 Attempting registration:', data.email);
       const response = await api.post('/auth/signup', data);
-      console.log('? Registration successful:', response.data);
+      console.log('✅ Registration successful:', response.data);
       return response.data;
     } catch (error: any) {
-      console.error('? Registration error:', error);
+      console.error('❌ Registration error:', error);
       
       const errorMessage = error.response?.data?.error?.message || 
                           error.response?.data?.message || 
@@ -47,7 +47,7 @@ export const authService = {
       const response = await api.get('/auth/me');
       return response.data;
     } catch (error: any) {
-      console.error('? Get user error:', error);
+      console.error('❌ Get user error:', error);
       throw error;
     }
   },
@@ -57,4 +57,3 @@ export const authService = {
     localStorage.removeItem('user');
   },
 };
-

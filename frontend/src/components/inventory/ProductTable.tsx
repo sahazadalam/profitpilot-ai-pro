@@ -71,4 +71,3 @@ export const ProductTable = ({ products, onEdit }: ProductTableProps) => {
     </div>
   );
 };
-

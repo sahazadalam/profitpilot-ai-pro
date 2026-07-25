@@ -202,13 +202,13 @@ export const ReportsDashboard = () => {
         quarterly: 'Quarterly',
         yearly: 'Yearly'
       };
-      alert(`? ${periodNames[activePeriod]} Report downloaded successfully!\n\n?? Includes revenue, orders, conversion rates, and top products.\n?? Format: PDF with full charts and metrics.`);
+      alert(`✅ ${periodNames[activePeriod]} Report downloaded successfully!\n\n📊 Includes revenue, orders, conversion rates, and top products.\n📁 Format: PDF with full charts and metrics.`);
     }, 1500);
   };
 
   const handleShare = () => {
     navigator.clipboard?.writeText('https://profitpilot.ai/reports/' + activePeriod);
-    alert('?? Share link copied to clipboard!');
+    alert('📤 Share link copied to clipboard!');
   };
 
   const handlePrint = () => {
@@ -564,7 +564,7 @@ export const ReportsDashboard = () => {
                           <div>
                             <h4 className="font-semibold text-blue-900 dark:text-blue-100">AI Insights</h4>
                             <p className="text-sm text-blue-800 dark:text-blue-300 mt-1">
-                              ?? Revenue is trending {parseFloat(metrics?.growth || '0') > 10 ? 'strongly' : 'steadily'} upward. 
+                              📈 Revenue is trending {parseFloat(metrics?.growth || '0') > 10 ? 'strongly' : 'steadily'} upward. 
                               Consider increasing inventory for top products: {topProducts.slice(0, 2).map(p => p.name).join(' & ')}.
                               Conversion rate could be improved by 0.8% with targeted promotions.
                             </p>

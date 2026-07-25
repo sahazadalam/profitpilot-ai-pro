@@ -19,7 +19,7 @@ export const api = axios.create({
 if (import.meta.env.DEV) {
   api.interceptors.request.use(
     (config) => {
-      console.log('?? API Request:', config.method?.toUpperCase(), config.url, config.data);
+      console.log('🚀 API Request:', config.method?.toUpperCase(), config.url, config.data);
       return config;
     },
     (error) => Promise.reject(error)
@@ -42,7 +42,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => {
     if (import.meta.env.DEV) {
-      console.log('? API Response:', response.status, response.data);
+      console.log('✅ API Response:', response.status, response.data);
     }
     return response;
   },
@@ -51,7 +51,7 @@ api.interceptors.response.use(
     const data = error.response?.data as any;
     
     // Log error details
-    console.error('? API Error:', {
+    console.error('❌ API Error:', {
       status,
       data,
       message: error.message,
@@ -95,4 +95,3 @@ api.interceptors.response.use(
 );
 
 export default api;
-

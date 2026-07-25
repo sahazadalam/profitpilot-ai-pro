@@ -47,4 +47,3 @@ export const StatCard = ({ title, value, icon, trend, color = 'text-primary' }: 
     </motion.div>
   );
 };
-

@@ -40,4 +40,3 @@ export const Seasonality = ({ data }: any) => {
     </Card>
   );
 };
-

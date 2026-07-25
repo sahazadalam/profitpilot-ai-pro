@@ -42,4 +42,3 @@ export const useAdmin = () => {
     error: stats.error || users.error,
   };
 };
-

@@ -49,4 +49,3 @@ export const ProductModal = ({ open, onOpenChange, product, onSuccess }: Product
     </Dialog>
   );
 };
-

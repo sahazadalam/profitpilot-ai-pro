@@ -150,4 +150,3 @@ export const About = () => {
     </motion.div>
   );
 };
-

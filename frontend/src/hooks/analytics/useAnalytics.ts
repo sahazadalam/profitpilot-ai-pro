@@ -56,4 +56,3 @@ export const useAnalytics = () => {
     error: revenue.error || profit.error || health.error,
   };
 };
-

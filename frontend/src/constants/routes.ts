@@ -27,4 +27,3 @@ export const PROTECTED_ROUTES = [
   ROUTES.PROFILE,
   ROUTES.SETTINGS,
 ]
-

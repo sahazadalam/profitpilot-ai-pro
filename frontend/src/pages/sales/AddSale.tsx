@@ -42,4 +42,3 @@ export const AddSale = () => {
     </motion.div>
   );
 };
-

@@ -1,8 +1,8 @@
 ﻿import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { Button } from '@/components/ui/Button';
-import { Progress } from '@/components/ui/Progress';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
 import { 
   Users, Package, ShoppingCart, TrendingUp, Activity, 
   Shield, Bell, Server, Zap, Clock, CheckCircle, 
@@ -290,7 +290,7 @@ export const AdminDashboard = () => {
                 <p className="text-xs text-muted-foreground">Satisfaction Rate</p>
               </div>
               <div className="rounded-lg border p-3 text-center">
-                <p className="text-2xl font-bold">4.8?</p>
+                <p className="text-2xl font-bold">4.8★</p>
                 <p className="text-xs text-muted-foreground">Average Rating</p>
               </div>
               <div className="rounded-lg border p-3 text-center">
@@ -332,4 +332,3 @@ export const AdminDashboard = () => {
     </motion.div>
   );
 };
-
