@@ -67,20 +67,59 @@ https://www.loom.com/share/YOUR_VIDEO_ID
 
 ---
 
-# 📱 Screenshots
+# 📱 Application Screenshots
 
-| Home | Dashboard |
-|-------|-----------|
-| Add Screenshot | Add Screenshot |
+Explore the key features of **ProfitPilot AI Pro** through the screenshots below.
 
-| Inventory | Analytics |
-|------------|-----------|
-| Add Screenshot | Add Screenshot |
+<table>
+<tr>
+<td align="center">
+<b>📦 Inventory Management</b><br><br>
+<img src="frontend/Inventory.png" width="450">
+</td>
 
-| Sales | AI Prediction |
-|-------|---------------|
-| Add Screenshot | Add Screenshot |
+<td align="center">
+<b>📈 Business Intelligence</b><br><br>
+<img src="frontend/Intelligence.png" width="450">
+</td>
+</tr>
 
+<tr>
+<td align="center">
+<b>🤖 AI Prediction</b><br><br>
+<img src="frontend/Prediction.png" width="450">
+</td>
+
+<td align="center">
+<b>💡 AI Recommendations</b><br><br>
+<img src="frontend/Recommendations.png" width="450">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>📊 Reports & Analytics</b><br><br>
+<img src="frontend/Report.png" width="450">
+</td>
+
+<td align="center">
+<b>👤 User Profile</b><br><br>
+<img src="frontend/Profile.png" width="450">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>💰 Sales Management</b><br><br>
+<img src="frontend/Sales.png" width="450">
+</td>
+
+<td align="center">
+<b>⚙️ Settings</b><br><br>
+<img src="frontend/Setting.png" width="450">
+</td>
+</tr>
+</table>
 ---
 
 # ⭐ Why ProfitPilot AI Pro?
@@ -222,7 +261,7 @@ It enables organizations to:
 
 # 👨‍💻 Developer
 
-## Sahzad Alam
+## Sahazad Alam
 
 **Full Stack Developer | Python Developer | AI Engineer**
 
