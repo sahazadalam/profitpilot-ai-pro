@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
-import { Progress } from '@/components/ui/progress';
+import { Progress } from '@/components/ui/Progress';
 import { 
   Users, Package, ShoppingCart, TrendingUp, Activity, 
   Shield, Bell, Server, Zap, Clock, CheckCircle, 
